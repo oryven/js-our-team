@@ -14,3 +14,65 @@ Ogni membro dovrà avere le informazioni necessarie per stampare la relativa car
    3.1 visualizzare il nuovo elemento del team in pagina
 */
 
+let container = document.querySelector("team-container");
+
+var team = [
+
+    {
+        "img" : "img/angela-caroll-chief-editor.jpg",
+        "nome" : "Angela Caroll",
+        "ruolo" : "Chief Editor"
+    },
+
+    {
+        "img" : "img/angela-lopez-social-media-manager.jpg",
+        "nome" : "Angela Lopez",
+        "ruolo" : "Social Media Manager"
+    },
+
+    {
+        "img" : "img/barbara-ramos-graphic-designer.jpg",
+        "nome" : "Barbara Ramos",
+        "ruolo" : "Graphic Designer"
+    },
+
+    {
+        "img" : "img/scott-estrada-developer.jpg",
+        "nome" : "Scott Estrada",
+        "ruolo" : "Developer"
+    },
+
+    {
+        "img" : "img/walter-gordon-office-manager.jpg",
+        "nome" : "Walter Gordon",
+        "roleTeam" : "Office Manager"
+    },
+
+    {
+        "img" : "img/wayne-barnett-founder-ceo.jpg",
+        "nome" : "Wayne Barnett",
+        "ruolo" : "Founder Ceo"
+    },
+
+];
+
+
+let elementiTeam = "";
+
+for (let i = 0; i < team.length; i++){
+
+    elementiTeam +=`
+    <div class"team-card">
+        <div class="card-image">
+            <img src="${foto}"
+            />
+        </div>
+        <div class="card-text">
+            <h3>${ruolo}</h3>
+            <p>${nome}</p>
+        </div>
+    </div>`;
+}
+
+container.innerHTML += elementiTeam;
+
