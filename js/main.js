@@ -25,7 +25,7 @@ var team = [
     },
 
     {
-        "img" : "img/angela-lopez-social-media-manager.jpg",
+        "img" : "img/angela-lopez-social-media-manager",
         "nome" : "Angela Lopez",
         "ruolo" : "Social Media Manager"
     },
@@ -45,7 +45,7 @@ var team = [
     {
         "img" : "img/walter-gordon-office-manager.jpg",
         "nome" : "Walter Gordon",
-        "roleTeam" : "Office Manager"
+        "ruolo" : "Office Manager"
     },
 
     {
