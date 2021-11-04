@@ -6,9 +6,9 @@ Ogni membro dovrà avere le informazioni necessarie per stampare la relativa car
 - Utilizziamo poi gli input presenti nella pagina per permettere all’utente di aggiungere nuovi membri del team.
 */
 
-/* 1.creo un arrey con sei membri del team
-   1.2 ogni elemento del team sarà un oggetto dell'array
-   1.2 scrivere le proprietà di ogni memmro ovvero: nome, ruolo e foto
+/* 1.creo un arrey con sei membri del team => done
+   1.2 ogni elemento del team sarà un oggetto dell'array => done
+   1.3 scrivere le proprietà e valori di ogni memmro ovvero: nome, ruolo e foto => done
    2.creare le relative schede prendendo le info dall'array
    3.tramite il form aggiungere all'array un nuovo membro del team
    3.1 visualizzare il nuovo elemento del team in pagina
@@ -59,12 +59,16 @@ var team = [
 
 let elementiTeam = "";
 
-for (let i = 0; i < team.length; i++){
+for (let i = 0; i < team.length; i++) {
 
+    let img = team[i].img;
+    let ruolo = team[i].ruolo;
+    let nome = team[i].nome;
+    
     elementiTeam +=`
     <div class"team-card">
         <div class="card-image">
-            <img src="${foto}"
+            <img src="${img}"
             />
         </div>
         <div class="card-text">
