@@ -14,7 +14,7 @@ Ogni membro dovrà avere le informazioni necessarie per stampare la relativa car
    3.1 visualizzare il nuovo elemento del team in pagina
 */
 
-let container = document.querySelector("team-container");
+let container = document.querySelector(".team-container");
 
 var team = [
 
@@ -25,7 +25,7 @@ var team = [
     },
 
     {
-        "img" : "img/angela-lopez-social-media-manager",
+        "img" : "img/angela-lopez-social-media-manager.jpg",
         "nome" : "Angela Lopez",
         "ruolo" : "Social Media Manager"
     },
@@ -76,7 +76,11 @@ for (let i = 0; i < team.length; i++) {
             <p>${nome}</p>
         </div>
     </div>`;
+    console.log(elementiTeam);
+
+    
 }
 
 container.innerHTML += elementiTeam;
+
 
