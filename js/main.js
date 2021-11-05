@@ -84,3 +84,46 @@ for (let i = 0; i < team.length; i++) {
 container.innerHTML += elementiTeam;
 
 
+let bottone = document.getElementById("addMemberButton");
+
+
+bottone.addEventListener("click",
+
+    function() {
+
+        let nomeNuovo = document.getElementById("name").value;
+
+        let ruoloNuovo = document.getElementById("role").value;
+
+        let imgNuova = document.getElementById("image").value;
+
+        let nuovoElemento = {
+
+            "img" : imgNuova,
+            "nome" : nomeNuovo,
+            "ruolo" : ruoloNuovo,
+        
+        };
+        
+        team.push(nuovoElemento);
+
+
+        container.innerHTML +=`
+        <div class="team-card">
+            <div class="card-image">
+                <img src="${team[1].img}"
+                />
+            </div>
+            <div class="card-text">
+                <h3>${nomeNuovo}</h3>
+                <p>${ruoloNuovo}</p>
+                
+            </div>
+        </div>
+    `
+
+    }
+
+)
+
+
